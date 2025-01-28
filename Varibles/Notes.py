@@ -1,0 +1,1 @@
+# Lizzie DeLong, Varible Notes
