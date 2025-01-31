@@ -5,9 +5,14 @@ int main(void){
     char greating[] = "Hello! I would like to know you more!";
     printf(greating);
 
-    char yourName[] = "Lizzie";
-    char favBook[] = "Great! Now tell me you favorite book: \n";
-    scanf(%s %s, yourName, favBook)
+    char yourName[30];
+    scanf("%s", yourName);
+    printf("Hello %s", yourName);
+
+    char favBook[60];
+    scanf("%s", favBook);
+    printf("Great! Now tell me you favorite book: \n");
+    
 
     printf("Thank you! Now I know you name %s is and you like the book %s\n", yourName, favBook);
 
