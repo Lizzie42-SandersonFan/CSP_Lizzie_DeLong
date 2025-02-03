@@ -1,3 +1,5 @@
+# Lizzie DeLong, First Python Program
+
 greating = "Hello! I would like to know you more!"
 print(greating)
 
