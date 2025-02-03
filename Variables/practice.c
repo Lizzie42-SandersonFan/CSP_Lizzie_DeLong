@@ -1,3 +1,4 @@
+// Lizzie DeLong, Practicing C
 #include <stdio.h>
 
 int main(void) {

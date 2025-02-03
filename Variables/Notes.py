@@ -1,6 +1,5 @@
 # Lizzie DeLong, Varible Notes
 
-
 subject = input("What's your favorite subject: ")
 
 smallNumber = 4

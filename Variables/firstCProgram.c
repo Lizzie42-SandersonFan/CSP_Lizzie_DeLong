@@ -1,6 +1,5 @@
-#include <stdio.h>
 // Lizzie DeLong, First C Project
-
+#include <stdio.h>
 
 int main(void){
     char greating[] = "Hello! I would like to know you more! \n";

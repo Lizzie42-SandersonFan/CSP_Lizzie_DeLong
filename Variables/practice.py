@@ -1,3 +1,5 @@
+# Lizzie DeLong, Practicing Python
+
 name = "Lizzie"
 number = 6
 biggerNumber = 765
