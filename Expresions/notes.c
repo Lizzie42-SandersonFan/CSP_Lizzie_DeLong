@@ -2,9 +2,14 @@
 
 #include <stdio.h>
 #include <math.h>
-float equation = 5*11+78/(5-2);
+
+//float x = pow(2,2);
+//float equation = 5*11+78/(5-x);
+
 
 int main(void){
-    //printf("%f \n", equation);
+    char name[] = "Lizzie";
+    printf("%s\n", name);
+
     return 0;
 }
