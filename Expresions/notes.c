@@ -9,6 +9,7 @@ float expressions = 5*pow(7, 2)/4;
 
 
 int main(void){
+    
     //char name[] = "Lizzie";
     //printf("%s\n", name);
     printf("%f", expressions);
