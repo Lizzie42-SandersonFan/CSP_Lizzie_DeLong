@@ -21,6 +21,7 @@ int main(void){
     printf("Great! Now tell me you favorite book: \n");
     fgets(favBook, sizeof(favBook), stdin);
 
+    // see lines 14 - 17
     int bookLength = strlen(favBook);
     favBook[bookLength-1] = 0;
  
