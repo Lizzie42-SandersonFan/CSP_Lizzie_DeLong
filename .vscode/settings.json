@@ -1,9 +1,0 @@
-{
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.saveFileBeforeRun": true,
-    "python.defaultInterpreterPath": "python",
-    "files.associations": {
-        "string.h": "c"
-    }
-}
