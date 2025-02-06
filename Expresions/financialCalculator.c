@@ -5,7 +5,7 @@
 
 int main(void){
     // Print hi and tell user what this program does
-    printf("Hello! This is your new personal financial calculator to help you with your money!");
+    printf("Hello! This is your new personal financial calculator to help you with your money! \n");
     // user input of income (variable)
     float income;
     printf("What is your monthly income: \n");
