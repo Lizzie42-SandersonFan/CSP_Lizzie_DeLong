@@ -26,14 +26,16 @@ groceriesPercent = (groceries/income)*100
 transportPercent = (transport/income)*100
 # calculate percent income of spending (spending/income*100) (varible)
 spendingPercent = (spending/income)*100
+answer = input("Horray! Ready for your results? \n")
 # your rent is $XX.XX which is XX% of your income. (print)
-
+print("Your rent is", rent, "which is", rentPercent, "of your income.")
 # your utilities is $XX.XX which is XX% of your income. (print)
-
+print("Your utilities bill is", utilities, "which is", utilitiesPercent, "of your income.")
 # your groceries is $XX.XX which is XX% of your income. (print)
-
+print("Your groceries spending is", groceries, "which is", groceriesPercent, "of your income.")
 # your transportion is $XX.XX which is XX% of your income. (print)
-
+print("Your transportion cost is", transport, "which is", transportPercent, "of your income.")
 # your savings is $XX.XX which is XX% of your income. (print)
-
+print("The savings you should put away every month is", savings, "which is 10 percent of your income.")
 # your spending is $XX.XX which is XX% of your income. (print)
+print("Your spending money is", spending, "which is", spendingPercent, "of your income.")
