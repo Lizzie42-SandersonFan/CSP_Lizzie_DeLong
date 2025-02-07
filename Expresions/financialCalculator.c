@@ -9,23 +9,23 @@ int main(void){
     // user input of income (variable)
     float income;
     printf("What is your monthly income: \n");
-    scanf("%f", income);
+    scanf("%f", &income);
     // user input of rent (variable)
     float rent;
     printf("What is your monthly rent payment: \n");
-    scanf("%f", rent);
+    scanf("%f", &rent);
     // user input of utilities (variable)
     float utilities;
     printf("What is your monthly utilities payment: \n");
-    scanf("%f", utilities);
+    scanf("%f", &utilities);
     // user input of groceries (variable)
     float groceries;
     printf("What is your monthly grocerie spending: \n");
-    scanf("%f", groceries);
+    scanf("%f", &groceries);
     // user input of transportaion (variable)
     float transport;
     printf("What is your monthly transportation spending: \n");
-    scanf("%f", transport);
+    scanf("%f", &transport);
     // calculate savings as 10% of income(income * .1) (variable)
     float savings = income*0.1;
     // calculate spending as income-savings-rent-utilities-groceries-treansport
