@@ -43,16 +43,16 @@ int main(void){
     float spendingPercent = (rent/income)*100;
 
     // your rent is $XX.XX which is XX% of your income. (print)
-    printf("Your rent bill is %f which is %f of your income. \n", rent, rentPercent);
+    printf("Your rent bill is $%f which is %f of your income. \n", rent, rentPercent);
     // your utilities is $XX.XX which is XX% of your income. (print)
-    printf("Your utilities bill is %f which is %f of your income. \n", utilities, utilitiesPercent);
+    printf("Your utilities bill is $%f which is %f of your income. \n", utilities, utilitiesPercent);
     // your groceries is $XX.XX which is XX% of your income. (print)
-    printf("Your groceries spending is %f which is %f of your income. \n", groceries, groceriesPercent);
+    printf("Your groceries spending is $%f which is %f of your income. \n", groceries, groceriesPercent);
     // your transportion is $XX.XX which is XX% of your income. (print)
-    printf("Your tranportstion cost is %f which is %f of your income. \n", transport, transportPercent);
+    printf("Your tranportstion cost is $%f which is %f of your income. \n", transport, transportPercent);
     // your savings is $XX.XX which is XX% of your income. (print)
-    printf("The monthly savings you should put away is %f. \n", savings);
+    printf("The monthly savings you should put away is $%f. \n", savings);
     // your spending is $XX.XX which is XX% of your income. (print)
-    printf("Your spending money left is %f which is %f of your income", spending, spendingPercent);
+    printf("Your spending money left is %%f which is %f of your income", spending, spendingPercent);
     return 0;
 }
