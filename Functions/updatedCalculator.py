@@ -1,24 +1,27 @@
 # Lizzie DeLong, Updated Python Financial Claculator with Functions
 
 def userInputs():
-    print("Hello World")
+    expenses = []
+    expenseTypes = ["rent", "utilities", "groceries", "transportation"]
 
-def percentOfExpenses():
-    print("Hello World")
+    for expense in expenseTypes:
+        amount = float(input(f"What is your monthly {expense}:\n"))
+        expenses.append(amount)
+
+    return expenses
+
+def percentOfExpenses(expenses, income):
+    totalExpenses = sum(expenses)
+    percentages = [(expense/income)*100 for expense in expenses]
+
+    return totalExpenses, percentages
+
 
 
 # Print hi and tell user what this program does
 print("Hello! This is your new personal financial calculator to help you with your money!")
 # user input of income (variable)
 income = float(input("What is your monthly income? \n"))
-# user input of rent (variable)
-rent = float(input("What is your monthly rent/morage payment? \n"))
-# user input of utilities (variable)
-utilities = float(input("What is your monthly utilities payment? \n"))
-# user input of groceries (variable)
-groceries = float(input("What is your monthly groceries spending? \n"))
-# user input of transportaion (variable)
-transport = float(input("What is your monthly transportaion spending? \n"))
 # calculate savings as 10% of income(income * .1) (variable)
 savings = income*0.1
 # calculate spending as income-savings-rent-utilities-groceries-treansport
