@@ -19,7 +19,7 @@ struct Finances {
     float spendingPercent;
 };
 
-void calculateFinances(struct Finances *f) {  
+float calculateFinances(struct Finances *f) {  
     f->savings = f->income * 0.1; // 10% of income  
     f->spending = f->income - f->savings - f->rent - f->utilities - f->groceries - f->transport;  
 }  
@@ -46,7 +46,7 @@ float percentOfExpenses(struct Finances *f) {
     f->spendingPercent = (f->spending/f->income)*100;
 }
 
-void printPercentages(struct Finances *f) {  
+const char* printPercentages(struct Finances *f) {  
     printf("Rent: %.f%%\n", f->rentPercent);  
     printf("Utilities: %.f%%\n", f->utilitiesPercent);  
     printf("Groceries: %.f%%\n", f->groceriesPercent);  

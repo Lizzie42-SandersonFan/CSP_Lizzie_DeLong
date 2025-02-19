@@ -7,11 +7,8 @@ char name[42], place[42], verb[42];
 int add(int numOne, int numTwo){
     return numOne + numTwo;
 }
-const char* word(char type[50]){ //const char* is for strings. const means no change and * means all
-    char choice[50];
-    printf("Please give me a %s:\n", type);
-    scanf("%s", choice);
-    return choice;
+void due(char assignment[50], char day[20]) {
+    printf("The %s assignment is due %s.\n", assignment, day);
 }
 
 int main(void){
@@ -20,7 +17,8 @@ int main(void){
     //add(num, 10);
     //add(8, 1);
     //add(72, 5);
-
-
+    due("Functions Notes", "today");
+    due("Hello World Update", "tomorrow");
+    due("Financial Calculator Update", "Friday");
     return 0;
 }
