@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float userInputs(float expense[]){
+float userInputs(char expense[]){
     printf("What is your monthly %s:\n", expense);
 }
 
@@ -33,11 +33,11 @@ int main(void){
     float transportPercent = calculatePercent(transport, income);
     float spendingPercent = calculatePercent(spending, income);
 
-    printf("Your rent bill is $%f which is %f percent of your income. \n", rent, rentPercent);
-    printf("Your utilities bill is $%f which is %f percent of your income. \n", utilities, utilitiesPercent);
-    printf("Your groceries spending is $%f which is %f percent of your income. \n", groceries, groceriesPercent);
-    printf("Your tranportstion cost is $%f which is %f percent of your income. \n", transport, transportPercent);
-    printf("The monthly savings you should put away is $%f, which is 10 percent of your income. \n", savings);
-    printf("Your spending money left is %%f which is %f percent of your income.", spending, spendingPercent);
+    printf("Your rent bill is $%.2f which is %.2f percent of your income. \n", rent, rentPercent);
+    printf("Your utilities bill is $%.2f which is %.2f percent of your income. \n", utilities, utilitiesPercent);
+    printf("Your groceries spending is $%.2f which is %.2f percent of your income. \n", groceries, groceriesPercent);
+    printf("Your tranportstion cost is $%.2f which is %.2f percent of your income. \n", transport, transportPercent);
+    printf("The monthly savings you should put away is $%.2f, which is 10 percent of your income. \n", savings);
+    printf("Your spending money left is $%.2f which is %.2f percent of your income.", spending, spendingPercent);
     return 0;
 }
