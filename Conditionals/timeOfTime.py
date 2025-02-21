@@ -18,4 +18,5 @@ elif timeOfDay >= "10:31" and timeOfDay <= "16:30":
 else:
     print("Good Evening!")
 
-print(convert24(timeOfDay))
+print(convert24(timeOfDay)) 
+# /\/\ This is for seeing that the convertion for comparison in the if statement is going right.
