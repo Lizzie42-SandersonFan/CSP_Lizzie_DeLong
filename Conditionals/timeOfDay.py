@@ -1,7 +1,7 @@
 # Lizzie DeLong, Time of Day Python
 from datetime import datetime
 
-timeOfDay = input("What time is it for you (12 hour format with AM/PM):\n")
+timeOfDay = input("What time is it for you (12 hour format with a SPACE then AM/PM):\n")
 
 # Converting the time to military time (24 hour format)
 def convert24(time):
