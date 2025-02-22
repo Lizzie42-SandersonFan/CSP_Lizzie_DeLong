@@ -3,6 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 
+// Function that converts the time into minutes for comparison later (line 36 onward)
+int timeOfDay(int hour, int minutes){
+    return (hour*60)+minutes;
+}
+
 int main(void){
     int hh, mm;
     char a[3];
@@ -13,7 +18,8 @@ int main(void){
     printf("Is it AM  or PM:\n");
     scanf("%s", a);
 
-    if(hh <= 12 && mm <= 59){
+    // Converting time to miltary
+    if(hh <= 12 && hh >= 0 && mm <= 59 && mm >= 0){
         if((strcmp(a,"PM") == 0) || (strcmp(a,"pm") == 0) && (hh != 0) && (hh != 12)){
             hh = hh + 12;
         }
@@ -21,24 +27,25 @@ int main(void){
             hh = 0;
         }
         printf("The obtained 24-hour format of input is: ");
-        printf("%02d:%02d", hh, mm);
+        printf("%02d:%02d\n", hh, mm);
     } else {
-        printf("Please put in the correct numbers");
+        printf("Please put in the correct numbers\n");
+        return 0;
     }
-    //int finalTime[20] = {0}; HELP
-    //strcat(finalTime, hh); HELP
-    //strcat(finalTime, mm); HELP
+
+    int minutesInDay = timeOfDay(hh,mm);
+    printf("minutes in day is %d\n", minutesInDay);
 
     // 5 am to 10:30 am is good morning
     // 10:31 am to 4:30 pm is good afternoon
     // every other time is good evening
 
-    //if(finalTime >= "4:00" && finalTime <= "10:30"){ HEEEEEEEELLLLP
-        //printf("Good Morning!");
-    //} else if (finalTime >= "10:31" && finalTime <= "16:30"){
-        //printf("Good Afternoon!");
-    //} else {
-        //printf("Good Evening!");
-    //}
+    if (minutesInDay >= timeOfDay(4,30) && minutesInDay <= timeOfDay(10,30)){
+        printf("Good Morning!\n");
+    } else if (minutesInDay >= timeOfDay(10,31) && minutesInDay <= timeOfDay(16,30)){
+        printf("Good Afternoon!\n");
+    } else {
+        printf("Good Evening!\n");
+    }
     return 0;
 }
