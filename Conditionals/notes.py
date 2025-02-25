@@ -6,7 +6,7 @@ if name == "LaRose":
 else:
     print(f"Hello {name}!")
 
-num = int(input("Give me a number:\n"))
+num = int(input("How many cookies are there:\n"))
 
 if num >= -1000000000000000000000000000000000000000000000000000000000000000000000000000000000:
     print("That is a negitive number!")
@@ -26,4 +26,11 @@ if num < 10 and num > -1:
 
 if num < 10:
     if num == 8:
-        print("This prints at 8")
+        print("There are 8 cookies")
+    else:
+        if num == 4:
+            print("There are only enough cookies for me...sorry")
+        else:
+            print("There are less than 10 cookies")
+else:
+    print("There are more than 10 cookies")
