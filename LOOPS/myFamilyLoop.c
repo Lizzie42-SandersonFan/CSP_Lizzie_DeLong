@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-char famList [4][10] = {"Lizzie", "Daniel", "Sarah", "Dave"};
-int i = 0;
 int main(void){
+    char famList [4][10] = {"Daniel", "Lizzie", "Sarah", "Dave"};
+    int i;
     for(i = 0; i < 4; i++){
         printf("Hello %s!\n", famList);
     }

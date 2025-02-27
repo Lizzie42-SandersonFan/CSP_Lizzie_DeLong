@@ -1,6 +1,6 @@
 # Lizzie DeLong, Family Loop Python
 
-famList = ["Lizzie", "Daniel", "Sarah(mom)", "Dave(dad)"]
+famList = ["Daniel", "Lizzie", "Sarah", "Dave"]
 
 for item in famList:
     print(f"Hello {item}!")
