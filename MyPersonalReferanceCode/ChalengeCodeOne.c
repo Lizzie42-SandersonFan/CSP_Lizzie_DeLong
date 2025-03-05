@@ -3,9 +3,8 @@
 
 int main(void){
     char instruments [][30] = {"Violin", "Viola", "Cello", "Bass", "Tuba", "Trombone", "Drums", "Guitar", "Flute", "Trumpet", "Clairanet", "Piano", "Harp", "Oboe"};
-
-    size_t my_array = sizeof(instruments);
-    int list_length = my_array / 30;
+    
+    int list_length = sizeof(instruments) / sizeof(instruments[0]);
     
     int i;
     for(i = 0; i < list_length; i++){
