@@ -167,11 +167,11 @@ void isGameOver(){
 }
 
 void printGameBoard(){
-    printf("%s | %s | %s |\n", squareOne, squareTwo, squareThree);
+    printf(" %s | %s | %s \n", squareOne, squareTwo, squareThree);
     printf("-----------\n");
-    printf("%s | %s | %s |\n", squareFour, squareFive, squareSix);
+    printf(" %s | %s | %s \n", squareFour, squareFive, squareSix);
     printf("-----------\n");
-    printf("%s | %s | %s |\n", squareSeven, squareEight, squareNine);
+    printf(" %s | %s | %s \n", squareSeven, squareEight, squareNine);
 }
 
 int main(void){
