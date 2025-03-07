@@ -21,63 +21,63 @@ void turnO(){
     
     if(playerOsquare == 1){
         if(squareOne == "1"){
-            squareOne[2] = "O";
+            squareOne[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 2) {
         if(squareTwo == "2"){
-            squareTwo[2] = "O";
+            squareTwo[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 3){
         if(squareThree == "3"){
-            squareThree[2] = "O";
+            squareThree[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 4){
         if(squareFour == "4"){
-            squareFour[2] = "O";
+            squareFour[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if (playerOsquare == 5){
         if(squareFive == "5"){
-            squareFive[2] = "O";
+            squareFive[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 6){
         if(squareSix == "6"){
-            squareSix[2] = "O";
+            squareSix[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 7){
         if(squareSeven == "7"){
-            squareSeven[2] = "O";
+            squareSeven[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if (playerOsquare == 8){
         if(squareEight == "8"){
-            squareEight[2] = "O";
+            squareEight[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
         }
     } else if(playerOsquare == 9){
         if(squareNine == "9"){
-            squareNine[2] = "O";
+            squareNine[0] = 'O';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnO();
@@ -95,63 +95,63 @@ void turnX(){
     
    if(playerXsquare == 1){
         if(squareOne == "1"){
-            squareOne[2] = "X";
+            squareOne[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 2) {
         if(squareTwo == "2"){
-            squareTwo[2] = "X";
+            squareTwo[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 3){
         if(squareThree == "3"){
-            squareThree[2] = "X";
+            squareThree[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 4){
         if(squareFour == "4"){
-            squareFour[2] = "X";
+            squareFour[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if (playerXsquare == 5){
         if(squareFive == "5"){
-            squareFive[2] = "X";
+            squareFive[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 6){
         if(squareSix == "6"){
-            squareSix[2] = "X";
+            squareSix[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 7){
         if(squareSeven == "7"){
-            squareSeven[2] = "X";
+            squareSeven[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if (playerXsquare == 8){
         if(squareEight == "8"){
-            squareEight[2] = "X";
+            squareEight[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
         }
     } else if(playerXsquare == 9){
         if(squareNine == "9"){
-            squareNine[2] = "X";
+            squareNine[0] = 'X';
         } else {
             printf("Sorry, you can't play there. Pick a different square.\n");
             turnX();
@@ -175,8 +175,8 @@ void printGameBoard(){
 }
 
 int main(void){
+    // This will eventually need to go into a while loop and isGameOver function needs to be set up and before that, reassigning the board varibles needs to be figured out
     printGameBoard();
-    // This will eventually need to go into a while loop and isGameOver function needs to be set up
     turnX();
     printGameBoard();
     turnO();
