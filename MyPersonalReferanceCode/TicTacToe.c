@@ -1,6 +1,7 @@
 // I bored so I build Tic-Tac-Toe
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 int playerOsquare;
 int playerXsquare;
@@ -16,69 +17,74 @@ char squareEight[2] = "8";
 char squareNine[2] = "9";
 
 // Functions
+
+bool streq(char *left, char *right) {
+    return strcmp(left, right) == 0;
+}
+
 void turnO(){
     printf("It's O's turn!\n");
     printf("Which square would you like to play in:\n");
     scanf("%d", &playerOsquare);
-    if(playerOsquare == 1 || playerOsquare == 2 || playerOsquare == 3 || playerOsquare == 4 || playerOsquare == 5 || playerOsquare == 6 || playerOsquare == 7 || playerOsquare == 8 || playerOsquare == 9){
+    if(playerOsquare >= 1 && playerOsquare <= 9){
         if(playerOsquare == 1){
-            if(!(squareOne == "X" || squareOne == "O")){
+            if(!(streq(squareOne, "X") || streq(squareOne, "O"))){
                 squareOne[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if(playerOsquare == 2) {
-            if(!(squareTwo == "X" || squareTwo == "O")){
+            if(!(streq(squareTwo, "X") || streq(squareTwo, "O"))){
                 squareTwo[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if(playerOsquare == 3){
-            if(!(squareThree == "X" || squareThree == "O")){
+            if(!(streq(squareThree, "X") || streq(squareThree, "O"))){
                 squareThree[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if(playerOsquare == 4){
-            if(!(squareFour == "X" || squareFour == "O")){
+            if(!(streq(squareFour, "X") || streq(squareFour, "O"))){
                 squareFour[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if (playerOsquare == 5){
-            if(!(squareFive == "X" || squareFive == "O")){
+            if(!(streq(squareFive, "X") || streq(squareFive, "O"))){
                 squareFive[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if(playerOsquare == 6){
-            if(!(squareSix == "X" || squareSix == "O")){
+            if(!(streq(squareSix, "X") || streq(squareSix, "O"))){
                 squareSix[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if(playerOsquare == 7){
-            if(!(squareSeven == "X" || squareSeven == "O")){
+            if(!(streq(squareSeven, "X") || streq(squareSeven, "O"))){
                 squareSeven[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else if (playerOsquare == 8){
-            if(!(squareEight == "X" || squareEight == "O")){
+            if(!(streq(squareEight, "X") || streq(squareEight, "O"))){
                 squareEight[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnO();
             }
         } else {
-            if(!(squareNine == "X" || squareNine == "O")){
+            if(!(streq(squareNine, "X") || streq(squareNine, "O"))){
                 squareNine[0] = 'O';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
@@ -87,72 +93,73 @@ void turnO(){
             
         }
     } else {
-        printf("Please put in a number that corisponds with the box you wish to play in.\n");
+        printf("Please put in a number that corrisponds with the box you wish to play in.\n");
     }
 }
+
 void turnX(){
     printf("It's X's turn!\n");
     printf("Which square would you like to play in:\n");
     scanf("%d", &playerXsquare);
-    if(playerXsquare == 1 || playerXsquare == 2 || playerXsquare == 3 || playerXsquare == 4 || playerXsquare == 5 || playerXsquare == 6 || playerXsquare == 7 || playerXsquare == 8 || playerXsquare == 9){
+    if(playerXsquare >= 1 && playerXsquare <= 9){
         if(playerXsquare == 1){
-            if(!(squareOne == "X" || squareOne == "O")){
+            if(!(streq(squareOne, "X") || streq(squareOne, "O"))){
                 squareOne[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if(playerXsquare == 2) {
-            if(!(squareTwo == "X" || squareTwo == "O")){
+            if(!(streq(squareTwo, "X") || streq(squareTwo, "O"))){
                 squareTwo[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if(playerXsquare == 3){
-            if(!(squareThree == "X" || squareThree == "O")){
+            if(!(streq(squareThree, "X") || streq(squareThree, "O"))){
                 squareThree[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if(playerXsquare == 4){
-            if(!(squareFour == "X" || squareFour == "O")){
+            if(!(streq(squareFour, "X") || streq(squareFour, "O"))){
                 squareFour[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if (playerXsquare == 5){
-            if(!(squareFive == "X" || squareFive == "O")){
+            if(!(streq(squareFive, "X") || streq(squareFive, "O"))){
                 squareFive[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if(playerXsquare == 6){
-            if(!(squareSix == "X" || squareSix == "O")){
+            if(!(streq(squareSix, "X") || streq(squareSix, "O"))){
                 squareSix[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if(playerXsquare == 7){
-            if(!(squareSeven == "X" || squareSeven == "O")){
+            if(!(streq(squareSeven, "X") || streq(squareSeven, "O"))){
                 squareSeven[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
                 turnX();
             }
         } else if (playerXsquare == 8){
-            if(!(squareEight == "X" || squareEight == "O")){
+            if(!(streq(squareEight, "X") || streq(squareEight, "O"))){
                 squareEight[0] = 'X';
             } else {
                  printf("Sorry, you can't play there. Pick a different square.\n");
                  turnX();
              }
         } else {
-            if(!(squareNine == "X" || squareNine == "O")){
+            if(!(streq(squareNine, "X") || streq(squareNine, "O"))){
                 squareNine[0] = 'X';
             } else {
                 printf("Sorry, you can't play there. Pick a different square.\n");
@@ -160,35 +167,62 @@ void turnX(){
             }
          }
     } else {
-        printf("Please put in a number that corisponds with the box you wish to play in.\n");
-        
+        printf("Please put in a number that corrisponds with the box you wish to play in.\n");
     }
 }
-void isGameOver(){
-    if(squareOne == "X" || squareOne == "O" && squareTwo == "X" || squareTwo == "O" && squareThree == "X" || squareThree == "O"){
-        gameOver = true; 
+
+bool isBoardTotallyFilled() {
+    if (streq(squareOne, "1")) { return false; }
+    if (streq(squareTwo, "2")) { return false; }
+    if (streq(squareThree, "3")) { return false; }
+    if (streq(squareFour, "4")) { return false; }
+    if (streq(squareFive, "5")) { return false; }
+    if (streq(squareSix, "6")) { return false; }
+    if (streq(squareSeven, "7")) { return false; }
+    if (streq(squareEight, "8")) { return false; }
+    if (streq(squareNine, "9")) { return false; }
+    return true;
+}
+
+bool isThereAWinner() {
+   if (streq(squareOne, squareTwo) && streq(squareTwo, squareThree)) {
         printf("The game is over.\n");
-    } else if(squareFour == "X" || squareFour == "O" && squareFive == "X" || squareFive == "O" && squareSix == "X" || squareSix == "O"){
+        return true; 
+   } else if (streq(squareOne, squareFour) && streq(squareFour, squareSeven)) {
+        printf("The game is over.\n");
+        return true; 
+   } else if (streq(squareOne, squareFive) && streq(squareFive, squareNine)) {
+        printf("The game is over.\n");
+        return true; 
+   } else if (streq(squareFour, squareFive) && streq(squareFive, squareSix)) {
+        printf("The game is over.\n");
+        return true;
+   } else if (streq(squareTwo, squareFive) && streq(squareFive, squareEight)) {
+        printf("The game is over.\n");
+        return true;
+   } else if (streq(squareSeven, squareEight) && streq(squareEight, squareNine)) {
+        printf("The game is over.\n");
+        return true;
+   } else if (streq(squareThree, squareSix) && streq(squareSix, squareNine)) {
+        printf("The game is over.\n");
+        return true;
+   } else if (streq(squareThree, squareFive) && streq(squareFive, squareSeven)) {
+        printf("The game is over.\n");
+        return true;
+   } else {
+        return false;
+   }
+}
+
+bool isThereADraw() {
+    return isBoardTotallyFilled() == true && isThereAWinner() == false;
+}
+
+void gamePlay(){
+    if(isThereAWinner() == true){
         gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareSeven == "X" || squareSeven == "O" && squareEight == "X" || squareEight == "O" && squareNine == "X" || squareNine == "O"){
+    } else if (isThereADraw() == true){
         gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareOne == "X" || squareOne == "O" && squareFour == "X" || squareFour == "O" && squareSeven == "X" || squareSeven == "O"){
-        gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareTwo == "X" || squareTwo == "O" && squareFive == "X" || squareFive == "O" && squareEight == "X" || squareEight == "O"){
-        gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareThree == "X" || squareThree == "O" && squareSix == "X" || squareSix == "O" && squareNine == "X" || squareNine == "O"){
-        gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareOne == "X" || squareOne == "O" && squareFive == "X" || squareFive == "O" && squareNine == "X" || squareNine == "O"){
-        gameOver = true;
-        printf("The game is over.\n");
-    } else if(squareThree == "X" || squareThree == "O" && squareFive == "X" || squareFive == "O" && squareSeven == "X" || squareSeven == "O"){
-        gameOver = true;
-        printf("The game is over.\n");
     } else {
         gameOver = false;
     }
@@ -203,16 +237,14 @@ void printGameBoard(){
 }
 
 int main(void){
-    // This will eventually need to go into a while loop and isGameOver function needs to be set up and before that, reassigning the board varibles needs to be figured out
     while(gameOver == false){
         printGameBoard();
         turnX();
+        gamePlay();
+        if (gameOver == true){break;}
         printGameBoard();
         turnO();
+        gamePlay();
+        
     }
-    /*
-    PROBLEMS OR FIX
-    1. THE GAME OVER FUNC NO WORK
-    2. WHAT IF IT IS A DRAWWWWW????
-    */
 }
