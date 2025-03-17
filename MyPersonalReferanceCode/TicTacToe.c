@@ -184,29 +184,45 @@ bool isBoardTotallyFilled() {
     return true;
 }
 
+void printGameBoard(){
+    printf(" %s | %s | %s \n", squareOne, squareTwo, squareThree);
+    printf("-----------\n");
+    printf(" %s | %s | %s \n", squareFour, squareFive, squareSix);
+    printf("-----------\n");
+    printf(" %s | %s | %s \n", squareSeven, squareEight, squareNine);
+}
+
 bool isThereAWinner() {
    if (streq(squareOne, squareTwo) && streq(squareTwo, squareThree)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true; 
    } else if (streq(squareOne, squareFour) && streq(squareFour, squareSeven)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true; 
    } else if (streq(squareOne, squareFive) && streq(squareFive, squareNine)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true; 
    } else if (streq(squareFour, squareFive) && streq(squareFive, squareSix)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true;
    } else if (streq(squareTwo, squareFive) && streq(squareFive, squareEight)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true;
    } else if (streq(squareSeven, squareEight) && streq(squareEight, squareNine)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true;
    } else if (streq(squareThree, squareSix) && streq(squareSix, squareNine)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true;
    } else if (streq(squareThree, squareFive) && streq(squareFive, squareSeven)) {
+        printGameBoard();
         printf("The game is over.\n");
         return true;
    } else {
@@ -226,14 +242,6 @@ void gamePlay(){
     } else {
         gameOver = false;
     }
-}
-
-void printGameBoard(){
-    printf(" %s | %s | %s \n", squareOne, squareTwo, squareThree);
-    printf("-----------\n");
-    printf(" %s | %s | %s \n", squareFour, squareFive, squareSix);
-    printf("-----------\n");
-    printf(" %s | %s | %s \n", squareSeven, squareEight, squareNine);
 }
 
 int main(void){
