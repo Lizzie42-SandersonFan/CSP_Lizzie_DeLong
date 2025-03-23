@@ -90,7 +90,7 @@ frostPiped = input("How would you like to frosting applied:\n 1. Piped \n 2. Spo
 # use a funtion to print out all topping request statement
 def toppingRequest(theTopping):
     global response
-    response = input(f"Would you like {theTopping} (Yes or No)?\n").strip().capitalize()
+    response = input(f"Would you like {theTopping} (Yes or No)?\n").strip().upper()
 
 for item in allToppings:
     toppingRequest(item)
@@ -104,10 +104,6 @@ for item in allToppings:
         isSprinkles = False
         isStrawberries = False
         isFudge = False
-
-    print(isSprinkles)
-    print(isStrawberries)
-    print(isFudge)
 
 #Lila results EX: The customer loved your (size, flavor, topping) cake! The custom demanded a refund as their cake was over/under baked
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
