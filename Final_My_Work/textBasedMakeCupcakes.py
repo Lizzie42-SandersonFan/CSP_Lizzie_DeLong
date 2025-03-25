@@ -1,9 +1,5 @@
 # Final project, River Stanley, Lila Shearer, chiara  
 
-# Things to fix or add
-    # Make it so if a user answers incorrectly, it will ask the question again instead of moving to the next question.
-    # Make it so that the oven temp will change the variable number of cakeStat
-
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
@@ -170,8 +166,10 @@ elif isSprinkles == False and isStrawberries == True and isFudge == False:
     toppings = " strawberries"
 elif isSprinkles == False and isStrawberries == False and isFudge == True:
     toppings = " fudge"
-else:
+elif isSprinkles == False and isStrawberries == False and isFudge == False:
     toppings = " no toppings"
+else:
+    toppings = "How did you do this"
 
 
 # This part of my code decides how the critic will respond by looking at what decisions werre made
@@ -196,7 +194,7 @@ else:
 
 # This part of my code is the response. It takes the user's choices and puts them into a print statement.
 def customerResponse(customerAnswer,cakepan,cakeFlavor,frostPiped,frostingFlavor,toppings, explanationMessage):
-    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting and{toppings}. {explanationMessage}')
+    print(f'The critic {customerAnswer} your {cakepan} {cakeFlavor} cake with {frostPiped} {frostingFlavor} frosting.\nYou added{toppings}.\n{explanationMessage}')
 
 customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
