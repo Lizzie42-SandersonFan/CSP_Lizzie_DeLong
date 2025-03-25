@@ -108,21 +108,20 @@ else:
 # use a funtion to print out all topping request statement
 def toppingRequest(theTopping):
     global response
-    response = input(f"Would you like {theTopping} (Yes or No)?\n").strip().upper()
+    response = input(f"Would you like {theTopping} (YES or NO)?\n").strip().upper()
 
 for item in allToppings:
     toppingRequest(item)
-    if item == "sprinkles" and response == "YES":
-        isSprinkles = True
-    elif item == "strawberries" and response == "YES":
-        isStrawberries = True
-    elif item == "fudge sauce" and response == "YES":
-        isFudge = True
-    else:
-        isSprinkles = False
-        isStrawberries = False
-        isFudge = False
-
+    if item == "sprinkles":
+        if response == "YES":
+            isSprinkles = True
+    if item == "strawberries":
+        if response == "YES":
+            isStrawberries = True
+    if item == "fudge sauce":
+        if response == "YES":
+            isFudge = True
+    
 #Lila results EX: The customer loved your (size, flavor, topping) cake! The custom demanded a refund as their cake was over/under baked
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
 # Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frostingFlavor type) frostingFlavor and (topping or no toppings)
