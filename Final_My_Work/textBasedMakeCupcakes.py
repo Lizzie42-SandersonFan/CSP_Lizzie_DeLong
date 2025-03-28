@@ -1,5 +1,8 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
+import time
+delay = 0.04
+
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
@@ -26,12 +29,24 @@ userNotTrying = 0
 certificate = 0
 
 #welcome banner, intro 
-print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
-print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
-print("Also, if you choose to not play the game correctly...something bad will happen...")
+opening = "\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n"
+alert = "IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n"
+warning = "Also, if you choose to not play the game correctly...something bad will happen...\n"
+
+for char in opening:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+for char in alert:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+for char in warning:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
 flavor= input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
+# see testing_code to find a function to make the text print out character by character
 
 if flavor == "1":
     cakeFlavor=1

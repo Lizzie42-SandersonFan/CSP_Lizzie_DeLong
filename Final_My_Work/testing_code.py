@@ -1,41 +1,12 @@
-#Chiara variables
-cakeFlavor=1
-frostingFlavor=2
+import time
+delay = 0.04
 
-#River varables
-cakepan=1
-cakeStat= 2
-ovenTemp = 0
+message6 = "As the door slowly creaks open, you peer out into a long hallway.\n"\
+"The hallway is dimly lit and has wallpaper that looks as though it is from an old orphanage.\n"\
+"You walk down the hall and find a door with the words “TOO LATE” scribbled on it.\n"\
+"\n"
 
-#Lizzie variables
-frostPiped=1
-allToppings = ["sprinkles", "strawberries", "fudge sauce"]
-isSprinkles = False
-isStrawberries = False
-isFudge = False
-notoppings = 0
-toppings = 0
-response = 0
-explanationMessage = 0
-customerAnswer = 0
-
-
-def toppingRequest(theTopping):
-    global response
-    response = input(f"Would you like {theTopping} (YES or NO)?\n").strip().upper()
-
-for item in allToppings:
-    toppingRequest(item)
-    if item == "sprinkles":
-        if response == "YES":
-            isSprinkles = True
-    if item == "strawberries":
-        if response == "YES":
-            isStrawberries = True
-    if item == "fudge sauce":
-        if response == "YES":
-            isFudge = True
-    
-print(isSprinkles)
-print(isStrawberries)
-print(isFudge)
+# function to print the message slowly.
+for char in message6:
+    print(char, end="", flush=True)
+    time.sleep(delay)
