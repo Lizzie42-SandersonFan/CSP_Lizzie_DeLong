@@ -1,8 +1,5 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
-import time
-delay = 0.04
-
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
@@ -29,24 +26,12 @@ userNotTrying = 0
 certificate = 0
 
 #welcome banner, intro 
-opening = "\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n"
-alert = "IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n"
-warning = "Also, if you choose to not play the game correctly...something bad will happen...\n"
-
-for char in opening:
-    print(char, end="", flush=True)
-    time.sleep(delay)
-for char in alert:
-    print(char, end="", flush=True)
-    time.sleep(delay)
-for char in warning:
-    print(char, end="", flush=True)
-    time.sleep(delay)
-
+print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
+print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
+print("Also, if you choose to not play the game correctly, something bad will happen...")
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
 flavor= input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
-# see testing_code to find a function to make the text print out character by character
 
 if flavor == "1":
     cakeFlavor=1
@@ -110,7 +95,7 @@ elif temp>376 and temp<=420:
      temp=3
      cakeStat = 3
      print("Your cake is a little overcooked but it will work\n")  
-elif temp<300:
+elif temp<=300:
      print("Your cake is still batter and the customer is furious. Game over. :(")  
      exit()
 else:
@@ -153,7 +138,7 @@ for item in allToppings:
 # change type for each variable. Use if statement to replace number with what it is (ex: if cakeFlavor = 1 then change it to cakeFlavor = 'chocolate')
 # Use function to print out The customer (love, liked, dislike, hated) your (size) (flavor) cake with (frostingFlavor type) frostingFlavor and (topping or no toppings)
 
-#This part of my code sets the variable to be the choice the user made so that my print statement runs smoothly.
+#Lila - this part of my code sets the variable to be the choice the user made so that my print statement runs smoothly.
 if frostingFlavor == 1:
     frostingFlavor = "buttercream"
 elif frostingFlavor == 2:
@@ -182,7 +167,7 @@ elif frostPiped == 2:
 else:
     frostPiped = "nonexistant"
 
-# This part of my code sets the toppings variable in my print statement so that it prints correctly
+#Lila - This part of my code sets the toppings variable in my print statement so that it prints correctly
 if isSprinkles == True and isStrawberries == True and isFudge == True:
     toppings = " sprinkles, strawberries, and fudge"
 elif isSprinkles == True and isStrawberries == True and isFudge == False:
@@ -203,10 +188,10 @@ else:
     toppings = "How did you do this?"
 
 
-# This part of my code decides how the critic will respond by looking at what decisions werre made
+#Lila - This part of my code decides how the critic will respond by looking at what decisions werre made
 if userNotTrying == 1:
-    customerAnswer = "HATED"
-    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyou eternally living in your mother's basement,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!\n♡♡♡♡♡♡♡"
+    customerAnswer = "was HORRIFIED and DISGUSTGED BY"
+    explanationMessage = "\nYou tried to use ingredients we didn't have, resulting in:\nyour cake failing,\nyou eternally living in your mother's basement,\nyour partner never meeting or marrying you,\nyour entire future being ruined,\nand a curse placed on all of your family members.\nNext time, use the ingredients provided!♡"
 elif frostPiped == "very nice looking" and cakeStat == 2 and toppings != " no toppings":
     customerAnswer = "LOVED"
     explanationMessage = "\nYour cake was perfect!\nYou won the game!\n"
@@ -227,7 +212,7 @@ else:
     customerAnswer = "hated"
     explanationMessage = "Your cake was not very good. It was lacking in several areas and was not enjoyable."
 
-# This part of my code is the response. It takes the user's choices and puts them into a print statement.
+#Lila - This part of my code is the response. It takes the user's choices and puts them into a print statement.
 def customerResponse(feelingAboutCake,size,theFLAVOUR,howYouapplyit,frostFlavor,howManyToppings, whyBadOrGood):
     print(f'The critic {feelingAboutCake} your {size} {theFLAVOUR} cake with {howYouapplyit} {frostFlavor} frosting.\nYou added{howManyToppings}.\n{whyBadOrGood}')
 
@@ -242,9 +227,11 @@ else:
     print("\nTime to present your creation!\n")
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
 
+
+#Lizzie - fun cake image
 print("\nThank you for playing!\n")
 print(" @@@@@@@ ")
 print(" |_____|")
 print("@@@@@@@@@")
 print("|_______|")
-print(":D")
+print("\n:D")
