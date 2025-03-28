@@ -5,9 +5,6 @@ import threading
 import os
 import random
 
-
-
-
 #Game Functions
 input_code = 0
 
@@ -42,31 +39,6 @@ except ImportError:
         os.system('pip install pygame')    
         input("Press Enter after installing Pygame to continue...")      
    
-# Ask if the user wants to play music  
-
-
-#play_music_input = input("Would you like to play music while typing? (yes/no): ")  
-
-
-#if play_music_input.lower() == 'yes':  
-
-
-#    music_thread = threading.Thread(target=play_music)  
-#      
-#    music_thread.start()  
- 
-# Your text-typing code here        
-
-
-
-
-
-
-
-
-
-
-
 
 # Tick Tack Toe - Jared Lewis
 def tic_tac_toe():
@@ -820,7 +792,7 @@ clear_terminal()
 
 # Chapter 2 - Jared
 def lock_picking():
-    message14 = "Chapter 2:\n"\
+    message14 = "Chapter 3:\n"\
     "THE BEAST\n"\
     "\n"
 
@@ -893,6 +865,7 @@ def lock_picking():
     print("Find the correct numbers and their placement to pick the lock.")
     print("BUT YOU MUST HURRY!")
     print("Only "+str(time_limit)+" seconds until the Beast breaks in!\n")
+    print(correct_answer)
 
     while guess == 0:
         if time_up:
