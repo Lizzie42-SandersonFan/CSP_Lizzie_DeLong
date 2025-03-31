@@ -1,5 +1,8 @@
 # Final project, River Stanley, Lila Shearer, Chiara Negron Wilson, Lizzie Delong
 
+import time
+delay = 0.04
+
 #Chiara variables
 cakeFlavor=1
 frostingFlavor=2
@@ -26,12 +29,23 @@ userNotTrying = 0
 certificate = 0
 
 #welcome banner, intro 
-print("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n")
-print("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n")
-print("Also, if you choose to not play the game correctly, something bad will happen...")
+welcome = "\nWelcome to Baking Simulator!\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n"
+important = "IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n"
+warning = "Also, if you choose to not play the game correctly, something bad will happen...\n"
+
+for char in welcome:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+for char in important:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+for char in warning:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+
 #Chiara What kind of cake? EX: vanilla, chocolate, carrot 
 # 1 = vanilla, 2 = choco, 3 = carrot cake
-flavor= input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
+flavor = input("\nWhat kind of cake would you like to make?\n (1 a vanilla cake\n (2 a chocolate cake\n (3 A carrot cake\n")
 
 if flavor == "1":
     cakeFlavor=1
@@ -105,7 +119,7 @@ else:
 
 #Lizzie frosting EX: pipped on, spooned on, none 
 # 1 = piped, 2 = spooned, 3 = none
-frostPiped = input("\nHow would you like to add the frosting:\n 1. Piped \n 2. Spooned on \n 3. No frosting \n")
+frostPiped = input("\nHow would you like to add the frosting:\n (1 Piped\n (2 Spooned on\n (3 No frosting\n")
 if frostPiped == "1":
     frostPiped = 1
 elif frostPiped == "2":
@@ -214,24 +228,50 @@ else:
 
 #Lila - This part of my code is the response. It takes the user's choices and puts them into a print statement.
 def customerResponse(feelingAboutCake,size,theFLAVOUR,howYouapplyit,frostFlavor,howManyToppings, whyBadOrGood):
-    print(f'The critic {feelingAboutCake} your {size} {theFLAVOUR} cake with {howYouapplyit} {frostFlavor} frosting.\nYou added{howManyToppings}.\n{whyBadOrGood}')
+    global theAnswer
+    theAnswer = f'The critic {feelingAboutCake} your {size} {theFLAVOUR} cake with {howYouapplyit} {frostFlavor} frosting.\nYou added{howManyToppings}.\n{whyBadOrGood}'
 
 if userNotTrying == 1:
-    print(explanationMessage)
+    for char in explanationMessage:
+        print(char, end="", flush=True)
+        time.sleep(delay)
+
 elif certificate == 1:
-    print("\nTime to present your creation!\n")
+    present = "\nTime to present your creation!\n"
+    for char in present:
+        print(char, end="", flush=True)
+        time.sleep(delay)
+
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
+    for char in theAnswer:
+        print(char, end="", flush=True)
+        time.sleep(delay)
+
     name = input("Please enter your first name to recieve your personalized certificate!\n").strip().capitalize()
-    print(f"\nCongradulations, {name}!!!\nYou won Baking Simulator!!!!!!\nYou made a marvelous {cakeFlavor} cake!!!!\n:D")
+    finalResult = f"\nCongradulations, {name}!!!\nYou won Baking Simulator!!!!!!\nYou made a marvelous {cakeFlavor} cake!!!!\n:D"
+    for char in finalResult:
+        print(char, end="", flush=True)
+        time.sleep(delay)
+
 else:
-    print("\nTime to present your creation!\n")
+    present = "\nTime to present your creation!\n"
+    for char in present:
+        print(char, end="", flush=True)
+        time.sleep(delay)
+
     customerResponse(customerAnswer, cakepan, cakeFlavor, frostPiped, frostingFlavor, toppings, explanationMessage)
+    for char in theAnswer:
+        print(char, end="", flush=True)
+        time.sleep(delay)
 
 
 #Lizzie - fun cake image
-print("\nThank you for playing!\n")
-print(" @@@@@@@ ")
-print(" |_____|")
-print("@@@@@@@@@")
-print("|_______|")
-print("\n:D")
+ending = "\nThank you for playing!\n"
+endingCake = " @@@@@@@ \n |_____|\n@@@@@@@@@\n|_______|\n:D\n"
+
+for char in ending:
+    print(char, end="", flush=True)
+    time.sleep(delay)
+for char in endingCake:
+    print(char, end="", flush=True)
+    time.sleep(delay)
