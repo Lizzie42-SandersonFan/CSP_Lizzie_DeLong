@@ -35,7 +35,6 @@ void toppingRequest(char theTopping[]) {
     
 }
 
-
 int main(void){
     printf("\nWelcome to Baking Simulator.\nIn this game you will get to bake a cake and have a critic try it.\nThe critic will give feedback based on your cake.\nYour goal is to have the critic love your cake!\n");
     printf("IMPORTANT NOTE:\nWhen answering questions, answer with the number of the option you want,\nUNLESS a different answering method is specified.\n:)\n");
