@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>HTML Advanced Notes</title>
+        <!--This is where the CSS goes-->
+        <style>
+            *{
+                background-color: black;
+                color: rgb(154,22,36);
+            }
+            p{
+                color: #00FFFF;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            li{
+                color: limegreen;
+            }
+            .example{
+                color: red;
+            }
+            #img-src{
+                font-size: 8px;
+                color: rgb(139, 139, 139);
+                text-align: left;
+            }
+            img{
+                width: 20%;
+            }
+        </style>
+    </head>
+        <body>
+            <div id="intro">
+                <h1>Cascading Style Sheets</h1>
+                <p>A nested tag is a tag that wxists inside another tag. Some tags require nesting while others shouldn't be nested.</p>
+                <p>An atribute is further instructions for the computer given inside of the opening tag. Such as the id we gave our div OR the charset we used inside of the meta tag.</p>
+            </div>
+            <div id = "lists">
+                <p>Lists are just like lists made in real life. They requrie nesting li tags inside of other tags.</p>
+                <ol class="example">
+                    <li>Item</li>
+                    <li>Item</li>
+                </ol>
+                <ul>
+                    <li>Way of Kings</li>
+                    <li>Skyward</li>
+                    <li>Mistborn</li>
+                    <li>Reckoners</li>
+                </ul>
+                <dl>
+                    <dt>Aang</dt>
+                    <dd><a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender" target="_blank">Avatar</a>, Last Airbender. Kinda silly, easily distracted.</dd>
+                    <dt>Katara</dt>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Katara.png" alt="Katara Waterbending">
+                    <dt id="img-src">Image from: Wikipedia</dt>
+                    <dd>Water bender. Preachy crybaby who makes speaches about hope all the time.</dd>
+                </dl>
+                <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">To learn about links</a>
+            </div>
+            <div id ="images">
+                <img src="https://miro.medium.com/v2/resize:fit:1200/0*3xTjr7rYOjGYjKqi.jpg" alt="Aang Bartering">
+                <p id="img-src">Image from: Medium</p>
+            </div>
+        </body>
+</html>
