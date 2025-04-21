@@ -3,8 +3,10 @@
     color: #74097F;
 }
 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     margin-top: 20px;
     margin-bottom: 15px;
 }
