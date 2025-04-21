@@ -1,0 +1,38 @@
+*{
+    background-color: #270455;
+    color: #74097F;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+#title{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: xx-large;
+}
+#headerTwo{
+    font-size: x-large;
+}
+#headerThree{
+    font-size: larger;
+}
+#italic{
+    font-style: italic;
+}
+#bold{
+    font-weight: bold;
+}
+#link{
+    color: #165BFB;
+}
+img{
+    width: 20%;
+}
+#img-src{
+    font-size: small;
+    font-weight: bold;
+    color: #5A2A9B;
+}
