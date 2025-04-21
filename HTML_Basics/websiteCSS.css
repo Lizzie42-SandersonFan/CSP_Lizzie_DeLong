@@ -4,7 +4,9 @@
 }
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 #title{
     font-family: "Lavishly Yours", cursive;
@@ -12,12 +14,15 @@ p{
     font-style: normal;
     text-align: center;
     font-size: xx-large;
+    padding: 2%;
 }
 #headerTwo{
     font-size: x-large;
+    text-decoration: underline;
 }
 #headerThree{
     font-size: larger;
+    text-decoration: underline;
 }
 #italic{
     font-style: italic;
@@ -30,9 +35,16 @@ p{
 }
 img{
     width: 20%;
+    padding: 5%;
 }
 #img-src{
     font-size: small;
     font-weight: bold;
     color: #5A2A9B;
+}
+#content{
+    display: grid;
+    width: 70%;
+    height: 100%;
+    align-items: center;
 }

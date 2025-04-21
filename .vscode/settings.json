@@ -4,5 +4,6 @@
         "typeinfo": "c",
         "string.h": "c",
         "_string.h": "c"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
