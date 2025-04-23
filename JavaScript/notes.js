@@ -12,7 +12,8 @@ function change(){
 }
 
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name?", "Brando Sando")
+    document.getElementById("title").innerHTML = "Hello "+ name + "!"
 }
 function hover(){
     document.getElementById("img").src = "https://m.media-amazon.com/images/I/81pJXhRLdoL.jpg"
@@ -20,6 +21,9 @@ function hover(){
 function leave(){
     document.getElementById("img").src = "https://uploads.coppermind.net/archive/20200105010217%21Bridge_Four_Badge.svg"
 }
-function hidden(){
-    document.getElementById("meme").style.display = "block"
+function pop(){
+    window.alert("Really, don't click that!")
+}
+function show(){
+    document.getElementById("lost").style.display = "block"
 }
