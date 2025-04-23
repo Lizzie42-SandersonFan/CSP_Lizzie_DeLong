@@ -19,12 +19,18 @@ p{
     padding: 2%;
 }
 #headerTwo{
+    display: flex;
     font-size: x-large;
     text-decoration: underline;
+    background-color: #9F72A8;
+    padding: 1%;
 }
 #headerThree{
+    display: flex;
     font-size: larger;
     text-decoration: underline;
+    background-color: #9F72A8;
+    padding: 0.5%;
 }
 #italic{
     font-style: italic;
@@ -37,12 +43,13 @@ p{
 }
 img{
     width: 20%;
-    padding: 5%;
+    padding-top: 2%;
 }
 #img-src{
     font-size: small;
     font-weight: bold;
     color: #5A2A9B;
+    margin-top: 0%;
 }
 #content-one{
     display: grid;
