@@ -1,6 +1,10 @@
-*{
+body{
     background-color: #270455;
     color: #74097F;
+}
+#everything{
+    display: grid;
+    grid-template-columns: 1fr 1fr
 }
 p{
     font-family: "Figtree", sans-serif;
@@ -51,9 +55,4 @@ img{
     color: #5A2A9B;
     margin-top: 0%;
 }
-#content-one{
-    display: grid;
-    width: 70%;
-    height: 100%;
-    align-items: center;
-}
+
