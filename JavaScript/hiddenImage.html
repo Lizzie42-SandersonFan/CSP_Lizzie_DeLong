@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Hover Over Title</title>
+        <script src="hiddenImage.js"></script>
         <style>
             img{
                 width: 250px;
@@ -12,21 +13,28 @@
                 font-size: smaller;
                 margin: 0%;
             }
+            #hidden_thing{
+                display: none;
+            }
         </style>
     </head>
     <body>
-        <h1>Hide and Seek</h1>
+        <h1 id="title" onclick = "show()">Hide and Seek</h1>
         <img id="hns" src="https://thumbs.dreamstime.com/b/cartoon-children-playing-hide-seek-park-vector-illustration-204891203.jpg" alt="Kids playing Hide and Seek Cartoon">
         <p id="img_credit">Image from Dreamstime</p>
         <p>Hide and Seek is a game typicly played by younger kids. The rules are as follows, there is the hunter, or seeker, who will count down. When this count down is going, the other remaning players will find a place to hide and not be found. Once the seeker has finished counting down, they will try and find everyone hiding. Generally, the first person found is the next seeker.</p>
-        <p>Rules to make the game more intersting</p>
+        <p>Rules to make the game more intersting:</p>
         <ul>
             <li>The hiding spots can only be in one area</li>
             <li>First person found has to take a nibble of the hottest chip in the world</li>
             <li>The last person found gets a candy</li>
             <li>The seeker has a limited time to search</li>
             <li>Hiding spots must give you a work-out to stay put</li>
-            <li></li>
         </ul>
+        <div id="hidden_thing">
+            <img id="hidden_boi" src="https://andinothernews462388949.wordpress.com/wp-content/uploads/2023/01/2a7b4-relief-emoji.png?w=648" alt="Thumbs-up">
+            <p id="img_credit">Image from WordPress</p>
+            <p>Congradulations! You found the hidden image!</p>
+        </div>
     </body>
 </html>
