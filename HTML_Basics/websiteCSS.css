@@ -55,4 +55,10 @@ img{
     color: #5A2A9B;
     margin-top: 0%;
 }
-
+#more{
+    display: none;
+}
+#hidden_image{
+    height: 300px;
+    width: auto;
+}
