@@ -23,6 +23,15 @@
     font-size: 400%;
 }
 
+body{
+    
+    background-color: #36716F;
+    color: #68A67B;
+}
+
+p{
+    font-size: x-large;
+}
 #main_webpage{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -39,7 +48,20 @@
     display: grid;
     grid-template-columns: 50% 50%;
 }
-img{
-    width: 30%;
+#hidden_stuff{
+    display: none;
+}
+#button{
+    justify-content: center;
+    width: 10%;
     height: auto;
+}
+img{
+    width: 50%;
+    height: auto;
+    border: 7px double white;
+}
+#img_credit{
+    margin: 0%;
+    font-size: small;
 }
