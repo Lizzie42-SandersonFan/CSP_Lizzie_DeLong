@@ -17,21 +17,27 @@
     transform: translate(-50%, -50%);
 }
 #title{
-    font-family: "Luxurious Script", cursive;
-    font-weight: 500;
+    font-family: "Ultra", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 400%;
 }
 
 body{
-    
     background-color: #36716F;
     color: #68A67B;
 }
 
-p{
-    font-size: x-large;
+h3{
+    font-family: "Luxurious Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 350%;
+    margin: 2%;
 }
+p{
+    font-size: larger;
+}
+
 #main_webpage{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -63,5 +69,5 @@ img{
 }
 #img_credit{
     margin: 0%;
-    font-size: small;
+    font-size: medium;
 }
