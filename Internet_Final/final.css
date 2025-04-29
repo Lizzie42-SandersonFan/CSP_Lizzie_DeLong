@@ -38,6 +38,9 @@ h3{
 p{
     font-size: larger;
 }
+#underline{
+    text-decoration: underline;
+}
 
 #main_webpage{
     display: grid;
@@ -66,7 +69,7 @@ p{
 img{
     width: 50%;
     height: auto;
-    border: 7px double white;
+    border: 9px double white;
 }
 #img_credit{
     margin: 0%;
