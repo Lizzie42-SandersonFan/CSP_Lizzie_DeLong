@@ -40,9 +40,9 @@ function changeImgTwo(){
 function view(){
     if(document.getElementById("hidden_stuff").style.display === "block"){
         document.getElementById("hidden_stuff").style.display = "none"
-        document.getElementById("button"). innerHTML = "Show More"
+        document.getElementById("button"). innerHTML = "Show More Info About Skiing"
     } else {
         document.getElementById("hidden_stuff").style.display = "block"
-        document.getElementById("button"). innerHTML = "Show Less"
+        document.getElementById("button"). innerHTML = "Show Less Info About Skiing"
     }
 }

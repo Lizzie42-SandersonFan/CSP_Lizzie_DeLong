@@ -7,7 +7,7 @@
 }
 #bckgrnd_img{
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
 
 #centered_title{
@@ -23,8 +23,8 @@
 }
 
 body{
-    background-color: #36716F;
-    color: #68A67B;
+    background-color: #4C63AD;
+    color: #94B8DE;
 }
 
 h3{
@@ -33,6 +33,7 @@ h3{
     font-style: normal;
     font-size: 350%;
     margin: 2%;
+    color: white;
 }
 p{
     font-size: larger;
@@ -59,7 +60,7 @@ p{
 }
 #button{
     justify-content: center;
-    width: 10%;
+    width: 17%;
     height: auto;
 }
 img{
@@ -69,5 +70,5 @@ img{
 }
 #img_credit{
     margin: 0%;
-    font-size: medium;
+    font-size: small;
 }
