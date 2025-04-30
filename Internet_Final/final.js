@@ -43,6 +43,6 @@ function view(){
         document.getElementById("button"). innerHTML = "Show More Info About Skiing"
     } else {
         document.getElementById("hidden_stuff").style.display = "block"
-        document.getElementById("button"). innerHTML = "Show Less Info About Skiing"
+        document.getElementById("button"). innerHTML = "Show Less Info"
     }
 }

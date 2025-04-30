@@ -41,6 +41,9 @@ p{
 #underline{
     text-decoration: underline;
 }
+li::marker {
+    color: white;
+}
 
 #main_webpage{
     display: grid;
@@ -49,22 +52,31 @@ p{
 #row_one{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 2%;
+    border-bottom: 2px solid white;
 }
 #row_two{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 2%;
+    border-bottom: 2px solid white;
 }
 #row_three{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 2%;
+    border-bottom: 2px solid white;
 }
+
 #hidden_stuff{
     display: none;
+    padding: 2%;
 }
 #button{
     justify-content: center;
     width: 17%;
     height: auto;
+    margin: 1%;
 }
 img{
     width: 50%;
@@ -74,4 +86,8 @@ img{
 #img_credit{
     margin: 0%;
     font-size: small;
+    color: #768dda;
+}
+#cool_imgs{
+    margin: 3%;
 }
