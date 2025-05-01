@@ -88,8 +88,8 @@ li::marker {
     margin: 1%;
 }
 img{
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 325px;
     border: 9px double white;
 }
 #img_credit{
