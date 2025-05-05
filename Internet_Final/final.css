@@ -30,7 +30,6 @@
         2px -5px 0 #000,
         2px 5px 0 #000;
 }
-
 body{
     background-color: #4C63AD;
     color: #94B8DE;
@@ -53,7 +52,6 @@ p{
 li::marker {
     color: white;
 }
-
 #main_webpage{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -76,7 +74,6 @@ li::marker {
     padding: 2%;
     border-bottom: 6px solid white;
 }
-
 #hidden_stuff{
     display: none;
     padding: 2%;
